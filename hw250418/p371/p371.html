@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p371</title>
+    <style>
+      .pic img {
+        width: 100%;
+        height: auto;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+      }
+
+      .pic {
+        flex-basis: 32%;
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .pic {
+          flex-basis: 49%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .pic {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pic">
+        <img src="images/kitten-1.jpg" alt="아기 고양이 사진" />
+      </div>
+      <div class="pic">
+        <img src="images/kitten-2.jpg" alt="아기 고양이 사진" />
+      </div>
+      <div class="pic">
+        <img src="images/kitten-3.jpg" alt="아기 고양이 사진" />
+      </div>
+    </div>
+  </body>
+</html>
