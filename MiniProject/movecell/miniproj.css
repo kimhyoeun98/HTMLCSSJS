@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+}
+
+.subcontainer {
+    text-align: center;
+}
+
+.inputArea {
+    background-color: bisque;
+    margin : 20px;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.inputArea label {
+    display : inline-block;
+    padding-inline: 20px;
+    font-size: 1.2em;
+    border-inline-end: 3px solid violet;
+}
+
+.inputArea #inputBox {
+    padding: 10px;
+    height: 45px;
+    font-size : 1.2em;
+    border : none;
+    background-color: transparent;
+}
+
+.inputArea #inputBox:focus {
+    outline : none;
+}
+
+.inputArea #startBtn {
+    height: 45px;
+    width : 60px;
+    font-size : 1.2em;
+    border : none;
+    cursor : pointer;
+    background-color: rgb(164, 107, 195);
+}
+
+.displayArea {
+    display:inline-block;
+    margin: 10px;
+}
+
+.displayArea table {
+    border-collapse : collapse;
+}
+
+.displayArea table td {
+    border : 2px solid blueviolet;
+    width : 60px;
+    height: 60px;
+    cursor: pointer;
+}

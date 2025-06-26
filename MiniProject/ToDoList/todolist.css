@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+}
+
+.subcontainer {
+    text-align: center;
+}
+
+
+.inputArea {
+    background-color: bisque;
+    padding : 20px;
+}
+
+.inputArea #inputBox {
+    width:80%;
+    height: 45px;
+    border: 1px solid #eee;
+    font-size : 1.3em;
+    padding : 10px;
+}
+
+.inputArea #inputBox:focus {
+    outline: none;
+}
+
+.inputArea #addBtn {
+    width: 60px;
+    height: 45px;
+    font-size: 1.2em;
+    vertical-align: bottom;
+}
+
+#todolist {
+    background-color: azure;
+    display : none;
+    list-style : none;
+    font-size : 1.2em;
+    text-align : left;
+    font-weight : bold;
+}
+
+#todolist li {
+    padding:10px;
+    display: flex;  /* li 안의 요소들을 정렬하기 위해 flex 사용 */
+    align-items: center;
+    gap: 8px; /* 버튼과 텍스트 사이의 간격 */
+}
+
+
+/*span 태그가 남은 공간을 모두 차지하도록 설정 */
+#todolist li span {
+    flex-grow: 1;
+}
+
+#todolist .checkBtn {
+    border : 2px solid brown;
+    width : 20px;
+    height : 20px;
+    border-radius : 4px;
+    margin : 5px;
+    margin-right : 10px;
+    cursor: pointer;
+    /* background-color: brown; */
+}
+
+/*delBtn과 스타일 비슷하게 */
+#todolist .editBtn {
+    background-color: transparent;
+    border : none;
+    cursor: pointer;
+    font-weight : bold;
+    font-size : 1.2em;
+    color: rgb(38, 115, 202);
+}
+
+#todolist .delBtn {
+    background-color: transparent;
+    border : none;
+    cursor: pointer;
+    color : brown;
+    font-weight : bold;
+    font-size : 1.2em
+}
+
+#todolist .check {
+    text-decoration: line-through;
+    color : #999;
+    font-weight : bold;
+}
+
+/*allDelete 모양 바꾸고 싶어서 추가*/
+#allDeleteBtn {
+    border: none;
+    background-color: #ff685d; 
+    color: rgb(0, 0, 0); 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    font-size: 0.5em; 
+    font-weight: bold; 
+    cursor: pointer; 
+}

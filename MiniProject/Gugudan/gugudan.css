@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+}
+
+.subcontainer {
+    text-align: center;
+}
+
+
+.inputArea {
+    background-color: bisque;
+    padding : 20px;
+}
+
+.inputArea #inputBox {
+    width:80%;
+    height: 45px;
+    border: 1px solid #eee;
+    font-size : 1.3em;
+    padding : 10px;
+}
+
+.inputArea #inputBox:focus {
+    outline: none;
+}
+
+.inputArea #displayBtn {
+    width: 60px;
+    height: 45px;
+    font-size: 1.2em;
+    vertical-align: bottom;
+}
+
+.displayArea {
+    background-color: azure;
+    display : none;
+}
+
+.displayArea #danNumber {
+    padding : 10px;
+    font-size:1.2em;
+}
+
+.displayArea #result {
+    padding:10px;
+    font-size:1.2em;
+}
